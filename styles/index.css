@@ -1,0 +1,548 @@
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Universal Styles */
+
+:root {
+  --primary: #D0614D;
+  --secondary: #ffebcd;
+  --tertiary: #D0B3C3;
+  --text-primary: #a94331;
+  --text-dark: #333;
+  --rose: #fb7185;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--secondary);
+  color: var(--text-dark);
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+a:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.first-order {
+  order: -1;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a img {
+  margin: 15px 0;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+.nav-link {
+  margin: 0 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+  transition: 300ms ease-in-out all;
+}
+
+/* Hero Section Styles */
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+.hero-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Service Section Styles */
+
+.service-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.service-container > h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 1.5em;
+}
+
+.service-container > div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.service-card {
+  padding: 4px 12px;
+  background: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  rotate: 90deg;
+}
+
+.service-card:hover {
+  filter: grayscale(0%);
+  scale: 1.025;
+  transition: 100ms ease-in-out all;
+}
+
+.service-card.hair {
+  background-image: url('../assets/hair.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card.makeup {
+  background-image: url('../assets/makeup.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card.nails {
+  background-image: url('../assets/nails.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card > h2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card > h2 .lead {
+  color: var(--text-primary);
+  font-size: 1.1em;
+}
+
+.service-card > h2 .follow {
+  color: rgba(50, 50, 50, 0.35);
+  font-size: 0.75em;
+  order: -1;
+}
+
+/* About Section Styles */
+
+.about-container {
+  background: var(--tertiary);
+  overflow-x: hidden;
+}
+
+.about-container > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  padding: 80px 20px;
+}
+
+.about-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 180px;
+}
+
+.about-container h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+  font-style: oblique;
+  color: floralwhite;
+}
+
+.about-container h3 {
+  font-size: 4em;
+  font-weight: 500;
+  color: var(--text-primary);
+  position: relative;
+  top: 0px;
+  left: 16px;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+
+.about-container p {
+  text-align: justify;
+  margin-top: 25px;
+  color: rgba(60, 60, 60, 0.75);
+  line-height: 1.8em;
+  font-size: 0.9em;
+}
+
+.about-container p:nth-last-of-type(1) {
+  margin-top: 20px;
+  margin-right: 5px;
+  text-align: right;
+  font-weight: 500;
+  color: floralwhite;
+}
+
+/* Tutorials Section */
+
+.tutorials-container {
+  background: white;
+}
+
+.tutorials-container > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 100px 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.tutorials-container .text-lg {
+  font-size: 2em;
+  padding-bottom: 5%;
+}
+
+.tutorials-container h2 {
+  padding-bottom: 5%;
+  font-size: 1.4em;
+}
+
+.tutorials-container p {
+  text-align: justify;
+  color: #555;
+}
+
+.yt-container iframe {
+  margin-top: 14%;
+  width: 100%;
+  height: 320px;
+  border: var(--text-primary) 20px double;
+}
+
+/* Appointments Section */
+
+.appointments-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.appointments-image-container {
+  display: none;
+}
+
+.appointments-form {
+  background: white;
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-form h2 {
+  font-weight: 500;
+  color: var(--text-primary);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.appointments-container input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.appointments-form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.appointments-form button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: var(--text-primary);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.appointments-form button:hover {
+  opacity: 100%;
+  transition: 100ms ease-in-out all;
+}
+
+/* Footer Styles */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+footer .top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background: white;
+  color: #777;
+  padding: 20px 0;
+}
+
+footer .bottom {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
+  background: var(--text-primary);
+  color: white;
+}
+
+footer .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+footer img {
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+}
+
+footer .links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .link {
+  margin: 0 10px;
+}
+
+footer .link:hover {
+  color: var(--text-primary);
+  transition: 100ms ease-in-out all;
+  cursor: pointer;
+}
+
+footer .icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+  fill: #555;
+}
+
+footer .icon:hover {
+  cursor: pointer;
+  fill: var(--text-primary);
+  transform: translateY(-3px);
+  transition: 200ms ease-in-out all;
+}
+
+/* Larger Screens */
+
+@media screen and (min-width: 768px) {
+  .service-container {
+    position: relative;
+    padding: 100px 50px 200px 50px;
+  }
+
+  .service-container > div {
+    margin: 30px 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+  }
+
+  .service-container > h2 {
+    font-size: 1.8em;
+    padding-bottom: 80px;
+  }
+
+  .service-container > .rectangle.first {
+    position: absolute;
+    bottom: 10%;
+    left: -8%;
+    width: 25%;
+    height: 50%;
+    z-index: -1;
+    border-bottom-left-radius: 20%;
+    border: var(--text-primary) 20px double;
+  }
+
+  .service-container > .rectangle.second {
+    position: absolute;
+    top: 5%;
+    right: -5%;
+    width: 25%;
+    height: 50%;
+    z-index: -1;
+    rotate: 90deg;
+    border-top-left-radius: 20%;
+    border: var(--text-primary) 20px double;
+  }  
+
+  .service-card {
+    height: 360px;
+    filter: grayscale(100%);
+  }
+
+  .first-order {
+    order: 0;
+  }
+  
+  .about-container > div {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px 0;
+  }
+
+  .about-container h3 {
+    left: 24px;
+  }
+
+  .about-container img {
+    height: 500px;
+  }
+
+  .tutorials-container > div {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 120px 0 140px 0;
+  }
+
+  .tutorials-container h2 {
+    text-align: right;
+    padding-right: 10%;
+    padding-bottom: 0;
+  }
+
+  .tutorials-container p {
+    padding-right: 10%;
+    margin-top: 14px;
+    line-height: 180%;
+  }
+
+  .tutorials-container .text-lg {
+    font-size: 4em;
+  }
+
+  .yt-container iframe {
+    margin-top: 0;
+  }
+
+  .appointments-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 220px;
+    padding: 150px 0 250px 0;
+  }
+
+  .appointments-image-container {
+    display: block;
+    position: relative;
+  }
+  
+  .appointments-image-container .white-box {
+    background: white;
+    width: 408px;
+    height: 450px;
+    position: absolute;
+    bottom: 7px;
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .appointments-image-container > .rectangle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -120px;
+    z-index: -2;
+    width: 60%;
+    height: 50%;
+    border: var(--text-primary) 20px groove;
+  }
+
+  .appointments-form {
+    width: 600px;
+    padding: 40px 30px;
+    position: relative;
+    top: 5%;
+    left: 5%;
+  }
+
+  .appointments-form h2 {
+    font-size: 2em;
+  }
+
+  .appointments-form > .rectangle {
+    z-index: -2;
+    border: var(--text-primary) 20px dashed;
+    position: absolute;
+    bottom: -80px;
+    left: -100px;
+    width: 60%;
+    height: 80%;
+  }
+
+  footer .top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
