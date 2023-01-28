@@ -2,7 +2,7 @@
   Hair Day
 </h1>
 
-> This is a fun little landing page for a salon. It's only created for learning purposes.
+> This is a fun little landing page for a salon. It's created using vanilla HTML, CSS and JS only for learning purposes.
 
 ## Preview
 
